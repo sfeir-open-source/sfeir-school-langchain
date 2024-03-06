@@ -4,11 +4,13 @@
 
 ##==##
 
-<!-- .slide:-->
+<!-- .slide: -->
 
 # Avant toute chose
 
-## Pré-requis
+![h-800 float-left](assets/images/checks.jpg)
+
+**Pré-requis**
 
 * Python 3 (recommandé >= 3.11)
 
@@ -17,6 +19,6 @@
 
 <br><br>
 
-## GitHub de la formation
+**GitHub de la formation**
 
 [https://github.com/sfeir-open-source/sfeir-school-langchain](https://github.com/sfeir-open-source/sfeir-school-langchain)
