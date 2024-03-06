@@ -41,6 +41,8 @@ function toolsSlides() {
   return [
     //
     `${directory}00-TITLE.md`, //
+    `${directory}01-TITLE.md`, //
+    `${directory}02-TITLE.md`, //
   ]
 }
 

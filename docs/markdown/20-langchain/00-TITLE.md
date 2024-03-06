@@ -90,6 +90,7 @@ Enfin, LangChain utilise des API pour permettre aux utilisateurs d'intégrer fac
 
 Notes:
 * LCEL = LangChain Expression Language
+* Interface définissant ```invoke, batch, stream, ainvoke, ..```
 
 ##==##
 

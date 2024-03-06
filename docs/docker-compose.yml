@@ -1,7 +1,8 @@
 version: '3'
 services:
   npx:
-    image: node:16.18
+    container_name: sfeir-school-langchain
+    image: node:20
     user: node
     command: npx serve
     volumes:
