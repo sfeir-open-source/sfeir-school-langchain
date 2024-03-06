@@ -68,3 +68,5 @@ typings/
 
 #Dev
 docs/test.html
+
+.venv*
