@@ -4,6 +4,12 @@
 
 Pour ce lab, l'idée est de construire et de se familiriaser avec le principe de LCEL et de construire sa première chaîne.
 
+```mermaid
+flowchart LR
+    A[Prompt] --> B[LLM]
+    B --> C[Parser de String]
+```
+
 ## Etapes
 
 Sur la base du précédent lab, définir un llm relié à un modèle Ollama, par exemple "mistral".
@@ -32,6 +38,44 @@ On peut stream la réponse, au lieu d'appeler la méthode *invoke*, utilisez la 
 Attention, cette méthode vous retourne un itérateur sur les morceaux de réponses quand ils sont disponibles, donc il va falloir boucler dessus et utiliser la méthode print avec les options suivantes ```end="", flush=True```.
 
 ### ChatPrompt
+
+```mermaid
+flowchart TD
+    SM1[Message système - contexte]
+    SM2[Message système - instructions JSON]
+    HM[Human Message]
+    J(Structure JSON)
+    P[Parser JSON]
+    L[LLM]
+
+    J -.-> SM2
+    J -.-> P
+
+    subgraph prompt
+        SM1 --> SM2 --> HM
+    end
+
+    prompt --> L --> P
+```
+
+```mermaid
+flowchart TD
+    SM1[Message système - contexte]
+    SM2[Message système - instructions JSON]
+    HM[Human Message]
+    J(Structure JSON)
+    P[Parser JSON]
+    L[LLM]
+
+    J -.-> SM2
+    J -.-> P
+
+    subgraph prompt
+        SM1 --> SM2 --> HM
+    end
+
+    prompt --> L --> P
+```
 
 On peut trouver des prompts plus avancés tout comme les parser. Essayez-vous avec pour prompt : **ChatPromptTemplate** et pour parser : **JsonOutputParser**. Pour le second s'ajoute une complexité, où il va falloir donner dans le prompt l'information que l'on souhaite la réponse dans un certain format pour permettre l'interprétation et la structuration de la réponse correctement.
 
