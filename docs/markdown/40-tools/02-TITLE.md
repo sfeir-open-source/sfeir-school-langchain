@@ -36,6 +36,8 @@ workflow.set_entry_point("Researcher")
 graph = workflow.compile()
 ```
 
+[Sources : https://github.com/langchain-ai/langgraph/tree/main/examples/multi_agent/](https://github.com/langchain-ai/langgraph/tree/main/examples/multi_agent/) 
+
 Notes:
 Décrire d'autre possibilités :
 * Agent_supervisor

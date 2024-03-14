@@ -31,26 +31,26 @@ flowchart TD
 
 ### Outil Wikipedia
 
-Utiliser l'outil Wikipedia fourit par langchain, qui est un wrapper de la librairie python **wikipedia**.
+Utiliser l'outil Wikipedia fournit par langchain, qui est un wrapper de la librairie python **wikipedia**.
 Vous allez pouvoir trouver **WikipediaQueryRun** dans le package *ttols* et **WikipediaAPIWrapper** sera disponible dans le package *langchain_community.utilities*.
 
 * WikipediaQueryRun va être l'interface
 * WikipediaAPIWrapper est un paramètre de WikipediaQueryRun, qui contient la config du client Wikipedia
 
-Le client wikipedia répondra sous d'une chaîne de caractère où  le double retour chariot `\n\n` sert de séparation entre les pages identifiées. Le nombre de page retournée est paramétrable.
+Le client wikipedia répondra sous d'une chaîne de caractère où le double retour chariot `\n\n` sert de séparation entre les pages identifiées. Le nombre de pages retournées est paramétrable.
 
 ### base vectorielle
 
-Envoyer le contenu d'une page wikipedia, dans une base vectorielle, pour lpouvoir enrichir le model.
+Envoyer le contenu d'une page wikipedia, dans une base vectorielle, pour pouvoir enrichir le modèle.
 Pour cela vous allez avoir besoin :
 
-* embedding `OllamaEmbeddings` - correspondant au bon model d'interprétation
-* d'un client de base vectorielle, recommandation `Chroma`, qui va vous permettre de vectoriser via la méthode `from_texts` les documents issues de la(des) page(s) Wikipedia récupéré, selon le bon format d'embedding.
+* embedding `OllamaEmbeddings` - correspondant au bon modèle d'interprétation
+* d'un client de base vectorielle, recommandation `Chroma`, qui va vous permettre de vectoriser via la méthode `from_texts` les documents issus de la(des) page(s) Wikipedia récupéré(s), selon le bon format d'embedding.
 * La récupération du contexte spécifique pourra se faire directement sur l'index via la méthode `similarity_search`
 
 ### Chain
 
 Définir la base du prompting avec un chat local, ex: mistra.
-Préparer une liste de message avec un premier message "Système" pour amener un contexte d'exécution pour l'IA et recommendation de réponse. Y ajouter également le contexte enrichi issue de la demande de l'utilisateur et transmettre la requête de l'utilisateur.
+Préparer une liste de messages avec un premier message "Système" pour amener un contexte d'exécution pour l'IA et recommendation de réponse. Y ajouter également le contexte enrichi issu de la demande de l'utilisateur et transmettre la requête de l'utilisateur.
 
-Et au final exécuter cette chaine construite.
+Et au final, exécuter cette chaine construite.
