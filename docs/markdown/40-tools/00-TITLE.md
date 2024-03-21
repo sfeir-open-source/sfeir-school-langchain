@@ -112,13 +112,13 @@ Déploiement sur Cloud Run, AWS Copilot, Azure en mode serverless directement
 
 # 🦜🕸️ LangGraph
 
-* Une librairie de l'echo-système LangChain
+* Une librairie de l'écosystème LangChain
 <br><br>
 
-* pilote multi-agent comme une machine à état
+* Pilote multi-agent comme une machine à état
 <br><br>
 
-* Mise en place d'interconnexion entre des agents (WorkFlow, Node)
+* Mise en place d'interconnexions entre des agents (WorkFlow, Node)
 <br><br>
 
 * Workflow de cycles

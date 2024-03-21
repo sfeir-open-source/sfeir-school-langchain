@@ -29,11 +29,11 @@ chain.invoke({"input":input})
 ### Streaming
 
 On peut stream la réponse, au lieu d'appeler la méthode *invoke*, utilisez la méthode *stream*. 
-Attention, cette méthode vous retourne un itérateur sur les morceaux de réponses quand ils sont disponibles, donc il va falloir bloucler dessus et utiliser la méthode print avec les options suivantes ```end="", Flush=True```.
+Attention, cette méthode vous retourne un itérateur sur les morceaux de réponses quand ils sont disponibles, donc il va falloir boucler dessus et utiliser la méthode print avec les options suivantes ```end="", flush=True```.
 
 ### ChatPrompt
 
-On peut trouver des prompts plus avancés tout comme les parser. Essayez-vous avec pour prompt : **ChatPromptTemplate** et pour parser : **JsonOutputParser**. Pour le second s'ajoute une complexité, où il va falloir donner dans le prompt l'information que l'on souhaite la réponse dans un certain format pour permettre l'interpréatation et la strucutration de la réponse correctement.
+On peut trouver des prompts plus avancés tout comme les parser. Essayez-vous avec pour prompt : **ChatPromptTemplate** et pour parser : **JsonOutputParser**. Pour le second s'ajoute une complexité, où il va falloir donner dans le prompt l'information que l'on souhaite la réponse dans un certain format pour permettre l'interprétation et la structuration de la réponse correctement.
 
 * Déjà structurez la réponse, en se basant sur la lib *pydantic*
 

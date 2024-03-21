@@ -5,7 +5,7 @@
 Les objectifs de ce lab sont de réaliser les mêmes appels au llm **llama2**, via langchain
 
 * Installer les librairies python langchain
-* installer les librairies complémntaires au client du LLM
+* installer les librairies complémentaires au client du LLM
 * renseigner son premier prompt
 * définir un premier parser de sortie
 
@@ -13,7 +13,7 @@ Les objectifs de ce lab sont de réaliser les mêmes appels au llm **llama2**, v
 
 ## Installation
 
-Via pip, installer la librairie langchain. Celle-ci comprends déjà les packages pour ollama
+Via pip, installer la librairie langchain. Celle-ci comprend déjà les packages pour ollama
 
 ```sh
 pip install langchain
@@ -22,7 +22,7 @@ pip install langchain
 ## Mon Premier script LangChain
 
 Comme premier LLM, nous allons utiliser le serveur ollama précédemment installé/utilisé.
-Pour notre premier script python, nous allons avoir besoin de la librairie _Ollama_ pour se connecter au LLM local. Cette librairie est directement inclu dans langchain dans le package _community_.
+Pour notre premier script python, nous allons avoir besoin de la librairie _Ollama_ pour se connecter au LLM local. Cette librairie est directement inclus dans langchain dans le package _community_.
 
 ```python
 from langchain_community.llms import Ollama

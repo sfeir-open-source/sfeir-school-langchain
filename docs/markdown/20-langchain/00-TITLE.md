@@ -8,7 +8,7 @@
 
 # 🦜🔗 Langchain
 
-- Harrison Chase et Ankush Gola a lancé Langchain en Octobre 2022
+- Harrison Chase et Ankush Gola ont lancé Langchain en Octobre 2022
 <br><br>
 
 - [GitHub - Open Source](https://github.com/langchain-ai/langchain) - ouverture  17 octobre 2022
@@ -53,7 +53,7 @@ Notes:
 
 # Langchain
 
-* Interface de multiple LLM
+* Interface de multiples LLM
 
 <br><br>
 
@@ -84,7 +84,7 @@ Enfin, LangChain utilise des API pour permettre aux utilisateurs d'intégrer fac
 
 * les chaînes : la séquence d'appels avec un LLM, un outils ou un traitement de données => LCEL & Chain
 <br><br>
-* les parsers : analyseur de donnée, principalement utiliser en sortie
+* les parsers : analyseur de données, principalement utilisé en sortie
 <br><br>
 * les prompts : personnalisés ou via IA
 
@@ -118,7 +118,7 @@ Notes:
 <br><br>
 * les bases vectorielles : un stockage de données non structurées
 <br><br>
-* les retrievers : les récupérateurs de données pour enrichire et augmenter la précision des requêtes
+* les retrievers : les récupérateurs de données pour enrichir et augmenter la précision des requêtes
 
 Notes:
     Concept sortant PNL - Programming Natural Language
@@ -129,7 +129,7 @@ Notes:
 
 # LangChain - Agents
 
-* prise de décision basée sur les I/O d'un flux de travail
+* Prise de décision basée sur les I/O d'un flux de travail
 
 <br><br>
 
@@ -143,7 +143,7 @@ Notes:
 
 <!-- .slide:-->
 
-# LangChain - Bases vectorielles
+# LangChain - Vector stores
 
 * Stockage de données d'enrichissement
 
@@ -154,7 +154,7 @@ Notes:
     <img class="h-150" src="./assets/images/redis.png">
 </div>
 
-* [Vector Stores](https://python.langchain.com/docs/integrations/vectorstores/)
+* [Vector Stores compatibles](https://python.langchain.com/docs/integrations/vectorstores/)
 <br><br>
 
 * Attention à l'aspect bêta des interfaces
@@ -169,7 +169,7 @@ car essentiellement encore codé sur le moèdle Chain et non LCEL
 
 # LangChain - Retrievers
 
-* Coeur pricinpale des RAG (Retrieval Augmented Generation)
+* Coeur principal des RAG (Retrieval Augmented Generation)
 
 * Interprétation des données
 

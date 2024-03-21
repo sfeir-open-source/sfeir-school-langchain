@@ -19,7 +19,7 @@ Ensuite dans la classe il suffit de définir les méthodes que l'on souhaite sur
 * def on_chain_start
 * def on_chain_end
 
-Une fis la classe constuite, on puet tuliser pour la propréité callbacks de défnition de nos Modèle de Language.
+Une fois la classe constuite, on peut utiliser la propriété callbacks de définition de nos Modèles de Languages.
 
 Maintenant, en repartant du lab 03, construire une liste de trois chaînes d'intégration pour les modèles LLama2, Mistral et 3ème au choix.
 Puis faire exécuter les trois chaînes, et vérifier les logs.
@@ -31,11 +31,11 @@ Puis faire exécuter les trois chaînes, et vérifier les logs.
 Une autre écriture est possible en utilisant la méthode ```configurable_alternatives``` directement sur le constructeur du modèle.
 Cette méthode requiert plusieurs propriétés :
 
-* ConfigurableField : permettant de définir quel propriété va servir d'alternatives, ici on utilisera **id**
-* default_key : le nom de la clé par défault utilisé
+* ConfigurableField : permettant de définir quelle propriété va servir d'alternatives, ici on utilisera **id**
+* default_key : le nom de la clé par défault utilisée
 
 Et ensuite dans la méthode tous les arguments sous la forme ```Key=Value``` complémentaires vont définir les différentes alternatives de la ressource.
 
 Définissez un ChatModel, compatible pour trois types (ex: llama2, mistral, codellama).
 
-Afin d'identifier les modèles lors de leur réponse, ajouter en premier message, un message système forçant le fait que l'IA doit s'identifier clairement avant tout réponse à la requête.
+Afin d'identifier les modèles lors de leur réponse, ajouter en premier message, un message système forçant le fait que l'IA doit s'identifier clairement avant toute réponse à la requête.

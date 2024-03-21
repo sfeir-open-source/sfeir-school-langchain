@@ -70,6 +70,6 @@ ex :
 
 ![One Joke](exemple-01.png)
 
-ou en Françcais
+ou en Français
 
 ![Une blague](exemple-01.png)

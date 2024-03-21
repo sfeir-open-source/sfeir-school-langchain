@@ -29,7 +29,7 @@ flowchart TD
 
 ### Deux chatbot
 
-Constuire à partir des labs précédents deux chats bots (ex: Mistral & LLama2).
+Construire à partir des labs précédents deux chats bots (ex: Mistral & LLama2).
 
 ### LangServe
 
@@ -39,7 +39,7 @@ Y créer deux routes associées chacunes à l'un des chatbots, via la méthode s
 ### Client
 
 Proposition de client python :
-Définir un client python **RemoteRunnable** du package *langserve*, (par exemple dnas un notebook dédié). 
-A partir de lui, définir une liste de message, voir utiliser un *input* utilisateur. Construisez une écriture LCEL du prompt et des exécutables pour déclencher l'appel via la méthode **batch**.
+Définir un client python **RemoteRunnable** du package *langserve*, (par exemple dans un notebook dédié). 
+A partir de lui, définir une liste de messages, voire utiliser un *input* utilisateur. Construisez une écriture LCEL du prompt et des exécutables pour déclencher l'appel via la méthode **batch**.
 
 ![](..img/info.png) La classe **RunnaleMap** permet de définir plusieurs *Runnable* en un seul.

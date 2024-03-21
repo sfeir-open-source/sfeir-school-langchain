@@ -47,6 +47,16 @@ https://medium.com/neo4j/json-based-agents-with-ollama-langchain-9cf9ab3c84ef
 
 ##==##
 
+<!-- .slide:  class="exercice"-->
+
+# 06 - LangChain - Application
+
+## Lab
+
+* Créer un assistant d'interrogation wikipedia
+
+##==##
+
 <!-- .slide: class="transition"-->
 
 # Démo

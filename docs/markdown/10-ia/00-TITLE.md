@@ -57,7 +57,7 @@ Notes:
 
 <!-- .slide:-->
 
-# Intelligence Articificiel Générative
+# Intelligence Artificielle Générative
 
 <br><br>
 
@@ -79,4 +79,4 @@ Notes:
 
 ## Lab
 
-* Ma première IA Local
+* Ma première IA Locale
