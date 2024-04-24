@@ -12,7 +12,7 @@ Au choix soit installer localement directement en invite de commande ollama en t
 
 [Téléchargement](https://ollama.ai/download/Ollama-darwin.zip)
 
-Recommendation :  Il est recommandé l'utilisation via docker avec Docker Desktop pour activation de l'accélération du GPU
+Recommendation :  Il est recommandé l'utilisation en mode service et non via docker
 
 * Sur Linux ou WSL2
 
@@ -64,6 +64,8 @@ ollama run llama2
 ```
 
 Cela peut prendre un peu de temps pour télécharger le modèle de plusieurs Mo.
+
+Pour la suite des exercices, nous utiliserons aussi d'autres LLM que vous pouvez d'ors et déjà récupérer `mistral, codellama`. Et vous pouvez parcourir la liste des LLM publié par (ollama)[https://ollama.com/library]
 
 Une fois, la possibilité de renseigner un prompt dans l'invite de commande, réaliser votre première intéraction.
 ex :

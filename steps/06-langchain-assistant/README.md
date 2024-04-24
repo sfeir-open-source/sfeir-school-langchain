@@ -50,7 +50,7 @@ Pour cela vous allez avoir besoin :
 
 ### Chain
 
-Définir la base du prompting avec un chat local, ex: mistra.
+Définir la base du prompting avec un chat local, ex: Mistral.
 Préparer une liste de messages avec un premier message "Système" pour amener un contexte d'exécution pour l'IA et recommendation de réponse. Y ajouter également le contexte enrichi issu de la demande de l'utilisateur et transmettre la requête de l'utilisateur.
 
 Et au final, exécuter cette chaine construite.

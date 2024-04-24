@@ -4,6 +4,27 @@
 
 S'interconnecter avec plusieurs LLMs.
 
+```mermaid
+flowchart TD
+    PR[(Prompt)]
+    P((Paramètre))
+    LM[LLM]
+    
+    subgraph LLMs
+        L1[Llama2]
+        L2[Mistral]
+        L3[Codellama]
+    end
+
+    subgraph chain
+        PR --> LM
+    end
+
+
+    P -.-> chain
+    LLMs -.-> LM
+```
+
 ## Etapes
 
 ### Liste de chaînes
@@ -19,7 +40,7 @@ Ensuite dans la classe il suffit de définir les méthodes que l'on souhaite sur
 * def on_chain_start
 * def on_chain_end
 
-Une fois la classe constuite, on peut utiliser la propriété callbacks de définition de nos Modèles de Languages.
+Une fois la classe construite, on peut utiliser celle-ci avec la propriété **callbacks** de définition de nos Modèle de Language.
 
 Maintenant, en repartant du lab 03, construire une liste de trois chaînes d'intégration pour les modèles LLama2, Mistral et 3ème au choix.
 Puis faire exécuter les trois chaînes, et vérifier les logs.

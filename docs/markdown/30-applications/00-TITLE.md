@@ -16,6 +16,10 @@
 * Automatisation de scénario
 * ...
 
+<br><br>
+
+![h-50](assets/images/youtube.png) [REX - @MultimodalAICommunity](https://www.youtube.com/@MultimodalAICommunity)
+
 ##==##
 
 <!-- .slide: data-background="./assets/images/chatbot_2.jpg" class="transition mask quote-slide" -->
