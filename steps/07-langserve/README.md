@@ -42,4 +42,4 @@ Proposition de client python :
 Définir un client python **RemoteRunnable** du package *langserve*, (par exemple dans un notebook dédié). 
 A partir de lui, définir une liste de messages, voire utiliser un *input* utilisateur. Construisez une écriture LCEL du prompt et des exécutables pour déclencher l'appel via la méthode **batch**.
 
-![](..img/info.png) La classe **RunnaleMap** permet de définir plusieurs *Runnable* en un seul.
+![](..img/info.png) La classe **RunnableMap** permet de définir plusieurs *Runnable* en un seul.

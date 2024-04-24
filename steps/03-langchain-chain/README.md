@@ -16,7 +16,7 @@ Sur la base du précédent lab, définir un llm relié à un modèle Ollama, par
 
 Pour la chaîne on va rajouter un interpréteur et une nouvelle sortie de réponse pour embellir celle-ci.
 
-![schema](./assets/schema.png)
+<!-- ![schema](./assets/schema.png) -->
 
 On va avoir besoin d'un template pour structurer le prompt que l'on va transmettre, *PromptTemplate*, va permettre de définir un template de notre input de messages. Il possède une méthode *from_template* qui va permetre via les attributs entre '{}' d'être injecté via notre chaîne d'interprétation.
 Et pour la sortie afin d'avoir une réponse plus embellie, nous allons utiliser le parser *StrOutputParser*, sans options particulières.
@@ -38,25 +38,6 @@ On peut stream la réponse, au lieu d'appeler la méthode *invoke*, utilisez la 
 Attention, cette méthode vous retourne un itérateur sur les morceaux de réponses quand ils sont disponibles, donc il va falloir boucler dessus et utiliser la méthode print avec les options suivantes ```end="", flush=True```.
 
 ### ChatPrompt
-
-```mermaid
-flowchart TD
-    SM1[Message système - contexte]
-    SM2[Message système - instructions JSON]
-    HM[Human Message]
-    J(Structure JSON)
-    P[Parser JSON]
-    L[LLM]
-
-    J -.-> SM2
-    J -.-> P
-
-    subgraph prompt
-        SM1 --> SM2 --> HM
-    end
-
-    prompt --> L --> P
-```
 
 ```mermaid
 flowchart TD

@@ -4,6 +4,27 @@
 
 S'interconnecter avec plusieurs LLMs.
 
+```mermaid
+flowchart TD
+    PR[(Prompt)]
+    P((Paramètre))
+    LM[LLM]
+    
+    subgraph LLMs
+        L1[Llama2]
+        L2[Mistral]
+        L3[Codellama]
+    end
+
+    subgraph chain
+        PR --> LM
+    end
+
+
+    P -.-> chain
+    LLMs -.-> LM
+```
+
 ## Etapes
 
 ### Liste de chaînes
