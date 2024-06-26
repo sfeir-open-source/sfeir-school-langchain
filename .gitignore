@@ -70,3 +70,4 @@ typings/
 docs/test.html
 
 .venv*
+.school.venv
