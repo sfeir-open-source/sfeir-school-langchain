@@ -46,7 +46,7 @@ Pour l'interprétateur, on va utiliser le splitter de texte : **RecursiveCharact
 Pour la structure vectorielle, nous allons utiliser la librairie fournit par Meta : **FAISS**, qui est disponible dasn le package `langchain_community.vectorstores`.
 A savoir que FAISS a une méthode statique *`from_documents()`* que l'on va utiliser directement avec en input nos documents une fois traités ET notre cible de format d'embedding.
 
-Pour l'embedding, vous allez utiliser **OllamaEmbedding** du package `langchain_community.embeddings` qui va nous permettre au travers de ses paramètres de ciblé le bon modèle cible d'IA.
+Pour l'embedding, vous allez utiliser **OllamaEmbeddings** du package `langchain_community.embeddings` qui va nous permettre au travers de ses paramètres de ciblé le bon modèle cible d'IA.
 
 Ici, avec ces éléments, vous pouvez déjà générer les vecteurs de représentation votre document.
 
