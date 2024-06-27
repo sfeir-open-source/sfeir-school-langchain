@@ -44,9 +44,9 @@ Le client wikipedia répondra sous d'une chaîne de caractère où le double ret
 Envoyer le contenu d'une page wikipedia, dans une base vectorielle, pour pouvoir enrichir le modèle.
 Pour cela vous allez avoir besoin :
 
-* embedding `OllamaEmbeddings` - correspondant au bon modèle d'interprétation
-* d'un client de base vectorielle, recommandation `Chroma`, qui va vous permettre de vectoriser via la méthode `from_texts` les documents issus de la(des) page(s) Wikipedia récupéré(s), selon le bon format d'embedding.
-* La récupération du contexte spécifique pourra se faire directement sur l'index via la méthode `similarity_search`
+* embedding **OllamaEmbeddings** - correspondant au bon modèle d'interprétation
+* d'un client de base vectorielle, recommandation **Chroma**, qui va vous permettre de vectoriser via la méthode *`from_texts()`* les documents issus de la(des) page(s) Wikipedia récupéré(s), selon le bon format d'embedding.
+* La récupération du contexte spécifique pourra se faire directement sur l'index via la méthode *`similarity_search()`*
 
 ### Chain
 
