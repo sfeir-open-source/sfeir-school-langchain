@@ -32,7 +32,7 @@ flowchart TD
 ### Outil Wikipedia
 
 Utiliser l'outil Wikipedia fournit par langchain, qui est un wrapper de la librairie python **wikipedia**.
-Vous allez pouvoir trouver **WikipediaQueryRun** dans le package *ttols* et **WikipediaAPIWrapper** sera disponible dans le package *langchain_community.utilities*.
+Vous allez pouvoir trouver **WikipediaQueryRun** dans le package *tools* et **WikipediaAPIWrapper** sera disponible dans le package *langchain_community.utilities*.
 
 * WikipediaQueryRun va être l'interface
 * WikipediaAPIWrapper est un paramètre de WikipediaQueryRun, qui contient la config du client Wikipedia
