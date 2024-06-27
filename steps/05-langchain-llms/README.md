@@ -30,7 +30,7 @@ flowchart TD
 ### Liste de chaînes
 
 Afin d'identifier les LLMs utilisés, nous allons voir une première approche avec les callbacks afin de log une métadonnée d'information.
-Pour ce faire, il faut définir une class, ex: MyHandler qui hérite de l'interface ```BaseCallbackHandler```.
+Pour ce faire, il faut définir une class, ex: `MyHandler` qui hérite de l'interface `BaseCallbackHandler` du package `langchain.callbacks.base`.
 
 Ensuite dans la classe il suffit de définir les méthodes que l'on souhaite surcharger, parmis les suivantes :
 
@@ -49,7 +49,7 @@ Puis faire exécuter les trois chaînes, et vérifier les logs.
 
 ### 3 Modèles de language en 1
 
-Une autre écriture est possible en utilisant la méthode ```configurable_alternatives``` directement sur le constructeur du modèle.
+Une autre écriture est possible en utilisant la méthode *`configurable_alternatives()`* directement sur le constructeur du modèle.
 Cette méthode requiert plusieurs propriétés :
 
 * ConfigurableField : permettant de définir quelle propriété va servir d'alternatives, ici on utilisera **id**
