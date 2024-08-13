@@ -97,7 +97,7 @@ Notes:
 
 <!-- .slide:  class="exercice"-->
 
-# 02 - LangChain
+# 01 - LangChain
 
 ## Lab
 
@@ -109,9 +109,9 @@ Notes:
 
 # Langchain
 
-<br>
-
 ## Première approche
+
+<br><br>
 
 * Les parsers : analyseur de données, principalement utilisé en sortie
 
@@ -131,7 +131,7 @@ Notes:
 
 <!-- .slide:  class="exercice"-->
 
-# 03 - LangChain
+# 02 - LangChain
 
 ## Lab
 
@@ -143,9 +143,9 @@ Notes:
 
 # LangChain
 
-<br>
-
 ## Seconde approche : modules d'interface
+
+<br><br>
 
 * Language Model : LLM ou ChatModel
 <br><br>
@@ -163,24 +163,9 @@ Notes:
 
 <!-- .slide:-->
 
-# LangChain - Agents
-## To move for later
+# Embedding
 
-* Prise de décision basée sur les I/O d'un flux de travail
-
-<br><br>
-
-* Orientation du flux, gestion d'erreurs et/ou d'exceptions
-
-<br><br>
-
-* Eventuelles connexions à des outils influençant la qualité de l'agent
-
-##==##
-
-<!-- .slide:-->
-
-# Embedding : Principe
+## Principe
 
 * Conversion de texte en vecteurs numériques denses
 <br><br>
@@ -199,17 +184,60 @@ Notes:
 
 <!-- .slide:-->
 
-# Embedding : Recherche de similarités
+# Embedding
+
+## Recherche de similarités
 
 <div style="display: flex; height: 80%; width: 100%; justify-content: center;">
 <iframe src="https://openai.com/index/introducing-text-and-code-embeddings/#text-similarity-models" title="embeddings visualisation" frameborder="0"
 style="width: 100%; height: 100%;"></iframe>
 </div>
+
 ##==##
 
 <!-- .slide:-->
 
-# LangChain - Vector stores
+# LangChain
+
+## Données externes
+
+<div style="display: flex;flex-direction: row;width: 100%">
+<div style="flex: 1">
+
+<br><br>
+
+* Récupération depuis diverses sources
+
+<br><br>
+
+* Retour sous la forme d'un ou plusieurs documents
+
+<br><br>
+
+* Problématiques de traitement des données
+</div>
+<img class="h-800" src="./assets/images/document_loading.png">
+</div>
+
+##==##
+
+<!-- .slide: class="exercice"-->
+
+# 03 - LangChain
+
+## Lab
+
+* Données externes
+
+##==##
+
+<!-- .slide:-->
+
+# LangChain
+
+## Vector stores
+
+<br>
 
 * Stockage de données d'enrichissement
 
@@ -233,14 +261,23 @@ car essentiellement encore codé sur le moèdle Chain et non LCEL
 
 <!-- .slide:-->
 
-# LangChain - Retrievers
+# LangChain
+
+## Retrievers
+
+<div>
 
 * Coeur principal des RAG (Retrieval Augmented Generation)
 
 * Interprétation des données
 
-![](./assets/images/langchain_retrieval.jpg)
-[LangChain - Retrieval](https://python.langchain.com/docs/modules/data_connection/)
+</div>
+<div style="display: flex;flex-direction: column;align-items: center">
+<img src="./assets/images/langchain_retrieval.jpg">
+
+<div style="text-align: center"><a href="https://python.langchain.com/docs/modules/data_connection/" style="font-size: 20px;display: block">LangChain - Retrieval</a></div>
+
+</div>
 <!-- .element: class="credits" -->
 
 ##==##
@@ -251,13 +288,17 @@ car essentiellement encore codé sur le moèdle Chain et non LCEL
 
 ## Lab
 
-* Retrieval
+* Stockage de données
 
 ##==##
 
 <!-- .slide: class=""-->
 
-# LangChain - LLMs
+# LangChain
+
+## LLMs
+
+<br>
 
 <div class="flex-row">
     <img src="./assets/images/mistral-ai.png">
@@ -284,4 +325,35 @@ car essentiellement encore codé sur le moèdle Chain et non LCEL
 
 ## Lab
 
-* LLMs
+* LLMs et configurables
+
+##==##
+
+<!-- .slide:-->
+
+# LangChainAgents
+
+## Agents
+
+<div style="display: flex;flex-direction: row;width: 100%">
+<div style="flex: 1">
+
+<br><br>
+
+* Décisions basées sur les I/O d'un flux de travail
+
+<br><br>
+
+* Eventuelles connexions à des outils
+
+<br><br>
+
+* Orientation du flux, gestion d'erreurs et/ou d'exceptions
+</div>
+<div style="flex: 1;text-align: center">
+<img class="h-800" src="./assets/images/agent_schema.png">
+</div>
+</div>
+
+Notes:
+- un agent utilise un LLM en moteur de résonnement pour déterminer quelle action effectuer et avec quels inputs

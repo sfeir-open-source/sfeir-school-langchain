@@ -80,8 +80,8 @@ Notes:
 
 <!-- .slide:  class="exercice"-->
 
-# 01 - IA Gen
+# LLM en local
 
-## Lab
+## Démo
 
-* Ma première IA Locale
+* Ollama
