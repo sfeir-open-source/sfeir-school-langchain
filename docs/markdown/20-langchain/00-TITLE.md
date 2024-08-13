@@ -13,7 +13,7 @@
 
 - [GitHub - Open Source](https://github.com/langchain-ai/langchain) - ouverture  17 octobre 2022
 <br><br>
-- Framework de développement d'outils, d'APIs en lien avec les LLM
+- Framework de développement d'applications en lien avec les LLM
 <br><br>
 - Interconnexion de données et être agentique
 <br><br>
@@ -23,7 +23,75 @@
 </div>
 
 Notes:
-* agentique :avoir conscience de son environnement, pouvoir intérargir avec lui => compétences autorégulatrices
+* agentique :capacité à prendre des décisions et à agir de manière autonome en ayant conscience de son environnement, en interagissant avec lui
+
+##==##
+
+<!-- .slide:-->
+
+# Langchain - Concepts
+
+<div style="display: flex;flex-direction: row;width: 100%">
+<div style="flex: 1">
+
+* Interface de multiples LLMs
+
+<br><br>
+
+* IA Privé ou public
+
+<br><br>
+
+* Utilisation de données externes
+
+<br><br>
+
+* Mise à disposition d'APIs et monitoring
+</div>
+<div style="flex: 1;display: flex;flex-direction: column;justify-content: center">
+<img class="h-800" style="display: block;margin-left: auto;margin-right: auto" src="./assets/images/langchain_stack.svg">
+<div style="text-align: center"><a href="https://python.langchain.com/v0.1/docs/get_started/introduction/" style="font-size: 14px; display: block">Source</a></div>
+</div>
+</div>
+
+Notes:
+LangChain est un framework conçu pour faciliter le développement d'applications utilisant des modèles de langage (LLMs)
+La puissance de ce framework est dans sa capacité à gérer efficacement les interactions avec de multiples LLMs à travers des fonctionnalités comme la gestion des prompts, le chaînage, les agents, la mémoire et l'indexation. Son approche modulaire, sa flexibilité et son extensibilité en font un outil puissant pour développer une large gamme d'applications basées sur les LLMs de manière personnalisable et adaptable.
+
+Il est possible d'utiliser des LLMs autant publiques que privés.
+* llms publiques : providers ou APIs
+* llms privés : hébergés en interne (éventuellement développés ou adaptés)
+
+Enfin, LangChain peut mettre rapidement à disposition les chaînes ou agents développés au travers d'APIs permettant ainsi aux utilisateurs d'intégrer facilement ces fonctionnalités dans leurs flux de travail.
+Ce framework existe dans plusieurs langages (principalement en Python et JavaScript, mais différents portages communautaires existent) permettant aux développeurs de choisir ce qui convient le mieux à leur application.
+
+Bonus : D'autres projets similaires commencent à voir le jour sur d'autres langages comme par exemple Spring AI.
+
+##==##
+
+<!-- .slide:-->
+
+# Langchain - Fonctionnalités
+
+* Prompts et templates
+
+<br><br>
+
+* Chaînage de process
+
+<br><br>
+
+* Historique / données externes
+
+<br><br>
+
+* Agents et outils
+
+Notes:
+* prompts / templates : envoi des requêtes aux LLMs avec possibilité de variabiliser certaines parties du prompt
+* chaînage : séquence d'appels avec un LLM, un outils ou un traitement de données => LCEL & ChainLCEL & Chain
+* possibilité de garder en mémoire les précédentes intractions et de les prendre en compte dans les futurs appels
+* agents : un modèle choisi la séquence d'actions à faire vs chaîne dont la séquence est figée dans le prompt
 
 ##==##
 
@@ -39,54 +107,21 @@ Notes:
 
 <!-- .slide:-->
 
-# Langchain - Concept
-
-* Chaînage du process
-
-<br><br>
-
-* Retrieval Augmented Generation - RAG
-
-##==##
-
-<!-- .slide:-->
-
-# Langchain
-
-* Interface de multiples LLM
-
-<br><br>
-
-* IA Privé ou public
-
-<br><br>
-
-* Utilisation des API
-
-Notes:
-LangChain est une plateforme d'intelligence artificielle qui permet aux utilisateurs de créer et de gérer des modèles d'IA personnalisés pour différentes tâches, telles que la génération de texte, la reconnaissance d'images, la traduction automatique, etc.
-Aspects clés de LangChain est son interface de multiple IA
-Combinaison de multipple IA => personnalisation + précision + automatisation.
-
-IA privés = fermés, entrainé pour soi, sur des données propres
-
-Enfin, LangChain utilise des API pour permettre aux utilisateurs d'intégrer facilement des modèles d'IA dans leurs applications et leurs flux de travail. Les API de LangChain sont conçues pour être faciles à utiliser et à intégrer, ce qui permet aux utilisateurs de se concentrer sur la création de flux de travail personnalisés plutôt que sur la gestion de la complexité technique sous-jacente. Les API de LangChain prennent en charge une variété de langages de programmation, ce qui permet aux utilisateurs de choisir le langage qui convient le mieux à leur application.
-
-##==##
-
-<!-- .slide:-->
-
 # Langchain
 
 <br>
 
 ## Première approche
 
-* les chaînes : la séquence d'appels avec un LLM, un outils ou un traitement de données => LCEL & Chain
+* Les parsers : analyseur de données, principalement utilisé en sortie
+
 <br><br>
-* les parsers : analyseur de données, principalement utilisé en sortie
+
+* Les prompts : personnalisés ou via IA
+
 <br><br>
-* les prompts : personnalisés ou via IA
+
+* Les chaînes : séquence d'appels avec un LLM, un outils ou un traitement de données => LCEL
 
 Notes:
 * LCEL = LangChain Expression Language
@@ -100,7 +135,7 @@ Notes:
 
 ## Lab
 
-* LCEL
+* LangChain Expression Language
 
 ##==##
 
@@ -114,20 +149,22 @@ Notes:
 
 * Language Model : LLM ou ChatModel
 <br><br>
-* les agents : un modèle pour permettre le choix de la séquence d'actions à prendre vs chaîne dont la séquence est figée
+* Les retrievers : récupèrent de données pour enrichir et augmenter la précision des requêtes
 <br><br>
-* les bases vectorielles : un stockage de données non structurées
+* les bases vectorielles : un stockage de données non structurées et vectorisées
 <br><br>
-* les retrievers : les récupérateurs de données pour enrichir et augmenter la précision des requêtes
+* Les agents : un modèle choisissant la séquence d'actions à prendre vs chaîne dont la séquence est figée
 
 Notes:
-    Concept sortant PNL - Programming Natural Language
+- LLM = input simple / ChatModel = input séquence de messages structurés
+- Concept sortant NLP - Natural Language Programming
 
 ##==##
 
 <!-- .slide:-->
 
 # LangChain - Agents
+## To move for later
 
 * Prise de décision basée sur les I/O d'un flux de travail
 
@@ -137,8 +174,37 @@ Notes:
 
 <br><br>
 
-* Contiennent des connexions à des outils influençant la qualité de l'agent
+* Eventuelles connexions à des outils influençant la qualité de l'agent
 
+##==##
+
+<!-- .slide:-->
+
+# Embedding : Principe
+
+* Conversion de texte en vecteurs numériques denses
+<br><br>
+* Capture le sens et les relations entre les mots et phrases
+<br><br>
+* Permet la comparaison de textes et la recherche de similarités
+<br>
+<img src="./assets/images/embeddings.png">
+
+Notes:
+
+- Les embeddings permettent de représenter le texte de manière compréhensible pour les machines
+- Cette représentation est cruciale pour la recherche et la comparaison de textes
+
+##==##
+
+<!-- .slide:-->
+
+# Embedding : Recherche de similarités
+
+<div style="display: flex; height: 80%; width: 100%; justify-content: center;">
+<iframe src="https://openai.com/index/introducing-text-and-code-embeddings/#text-similarity-models" title="embeddings visualisation" frameborder="0"
+style="width: 100%; height: 100%;"></iframe>
+</div>
 ##==##
 
 <!-- .slide:-->
