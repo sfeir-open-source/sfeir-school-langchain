@@ -30,9 +30,9 @@ Credentials
 <!-- .element: class="center" -->
 <br>
 
-![sfeir-icons big](user)<!-- .element: style="--icon-color:var(--light-grey);" --> SSID : WIFI-SFEIR
+![sfeir-icons big](user)<!-- .element: style="--icon-color:var(--light-grey);" --> SSID :
 
-![sfeir-icons big](lock)<!-- .element: style="--icon-color:var(--light-grey);" --> PWD : wifi@SFEIR33000!
+![sfeir-icons big](lock)<!-- .element: style="--icon-color:var(--light-grey);" --> PWD :
 
 ##==##
 

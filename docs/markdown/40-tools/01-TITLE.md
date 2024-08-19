@@ -1,3 +1,38 @@
+<!-- .slide:-->
+
+# 🦜🕸️ LangGraph
+
+* Une librairie de l'écosystème LangChain
+<br><br>
+
+* Pilote multi-agent comme une machine à état
+<br><br>
+
+* Mise en place d'interconnexions entre des agents (WorkFlow, Node)
+<br><br>
+
+* Workflow de cycles
+
+<!-- ## ==## -->
+
+<!-- <!-- .slide: class="cadre no-filter langgraph-steps" data-type-show="prez" data-state="langgraph-steps"-->
+<!-- # LangGraph -->
+
+<!-- <svg class="h-850">
+    <use href="#langgraph-multi-agent" link:href="#langgraph-multi-agent" />
+</svg> -->
+<!-- <div class="fragment" data-fragment-index="1" hidden></div>
+<div class="fragment" data-fragment-index="2" hidden></div>
+<div class="fragment" data-fragment-index="3" hidden></div>
+<div class="fragment" data-fragment-index="4" hidden></div>
+<div class="fragment" data-fragment-index="5" hidden></div>
+<div class="fragment" data-fragment-index="6" hidden></div>
+<div class="fragment" data-fragment-index="7" hidden></div>
+<div class="fragment" data-fragment-index="8" hidden></div>
+<div class="fragment" data-fragment-index="9" hidden></div> -->
+
+##==##
+
 <!-- .slide: class="full-center"-->
 
 # 🦜🕸️ LangGraph
@@ -474,3 +509,50 @@ inkscape:current-layer="svg139" />
 </svg>
 
 <!-- ![h-1000](./assets/images/langgraph-multi-agent.png) -->
+
+##==##
+
+<!-- .slide: class="with-code-bg-dark"-->
+
+# 🦜🕸️ LangGraph
+
+```python[1|3-5|7-29|30-31]
+workflow = StateGraph(AgentState)
+
+workflow.add_node("Researcher", research_node)
+workflow.add_node("Chart Generator", chart_node)
+workflow.add_node("call_tool", tool_node)
+
+workflow.add_conditional_edges(
+    "Researcher",
+    router,
+    {"continue": "Chart Generator", "call_tool": "call_tool", "end": END},
+)
+workflow.add_conditional_edges(
+    "Chart Generator",
+    router,
+    {"continue": "Researcher", "call_tool": "call_tool", "end": END},
+)
+
+workflow.add_conditional_edges(
+    "call_tool",
+    # Each agent node updates the 'sender' field
+    # the tool calling node does not, meaning
+    # this edge will route back to the original agent
+    # who invoked the tool
+    lambda x: x["sender"],
+    {
+        "Researcher": "Researcher",
+        "Chart Generator": "Chart Generator",
+    },
+)
+workflow.set_entry_point("Researcher")
+graph = workflow.compile()
+```
+
+[Sources : https://github.com/langchain-ai/langgraph/tree/main/examples/multi_agent/](https://github.com/langchain-ai/langgraph/tree/main/examples/multi_agent/) 
+
+Notes:
+Décrire d'autre possibilités :
+* Agent_supervisor
+* agents hierarchiques

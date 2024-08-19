@@ -15,6 +15,7 @@ L'intelligence artificielle = le robot ayant la maitrise du monde
 - Mis en avant dans plusieurs contextes de tous les jours et principalement dans :
   - features sur les appareils connectés
   - navigateurs web
+  - features dans les outils de travail (Miro, Trello, ...)
 
 ##==##
 
@@ -52,7 +53,7 @@ Notes:
   - Utilisé pour des tâches simples (classification, regression, clustering, ...)
 - DL :
    - Peut utiliser des donées non structurées
-   - Excelle dans la reconnaissance de paternes complexes
+   - Excelle dans la reconnaissance de paternes complexes (reconnaissance d'images, analyse de sentiment, etc.)
    - Utilise des architectures de réseaux de neurones
 - Gen AI :
   - Branche de l'IA capable de créer du contenu original (text, image, audio, ...)

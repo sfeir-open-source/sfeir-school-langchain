@@ -23,7 +23,13 @@
 </div>
 
 Notes:
-* agentique :capacité à prendre des décisions et à agir de manière autonome en ayant conscience de son environnement, en interagissant avec lui
+- sortie officielle octobre 2022 mais travail préalable sur GPT-1 et 2
+- framework conçu pour faciliter le développement d'applications utilisant des LLMs
+- simplifie l'interaction avec les APIs des LLMs existants
+- framework existants en Python et JavaScript
+- agentique : capacité à prendre des décisions et à agir de manière autonome en ayant conscience de son environnement, en interagissant avec lui
+
+Bonus : D'autres projets similaires commencent à voir le jour sur d'autres langages comme par exemple Spring AI.
 
 ##==##
 
@@ -55,17 +61,14 @@ Notes:
 </div>
 
 Notes:
-LangChain est un framework conçu pour faciliter le développement d'applications utilisant des modèles de langage (LLMs)
-La puissance de ce framework est dans sa capacité à gérer efficacement les interactions avec de multiples LLMs à travers des fonctionnalités comme la gestion des prompts, le chaînage, les agents, la mémoire et l'indexation. Son approche modulaire, sa flexibilité et son extensibilité en font un outil puissant pour développer une large gamme d'applications basées sur les LLMs de manière personnalisable et adaptable.
-
-Il est possible d'utiliser des LLMs autant publiques que privés.
-* llms publiques : providers ou APIs
-* llms privés : hébergés en interne (éventuellement développés ou adaptés)
-
-Enfin, LangChain peut mettre rapidement à disposition les chaînes ou agents développés au travers d'APIs permettant ainsi aux utilisateurs d'intégrer facilement ces fonctionnalités dans leurs flux de travail.
-Ce framework existe dans plusieurs langages (principalement en Python et JavaScript, mais différents portages communautaires existent) permettant aux développeurs de choisir ce qui convient le mieux à leur application.
-
-Bonus : D'autres projets similaires commencent à voir le jour sur d'autres langages comme par exemple Spring AI.
+- gère efficacement les interactions avec plusieurs LLMs grâces à ses fonctionnalités
+- approche modulaire, flexible et extensible
+- possibilité d'utiliser des LLMs publiques ou privés
+    - llms publiques : providers ou APIs
+    - llms privés : hébergés en interne (éventuellement développés ou adaptés)
+- données externes -> enrichissement des requêtes faites aux LLMs
+- mise à disposition au travers d'APIs
+- monitoring
 
 ##==##
 
@@ -113,11 +116,11 @@ Notes:
 
 <br><br>
 
-* Les parsers : analyseur de données, principalement utilisé en sortie
+* Les prompts : personnalisés ou via IA
 
 <br><br>
 
-* Les prompts : personnalisés ou via IA
+* Les parsers : analyseur de données, principalement utilisé en sortie
 
 <br><br>
 
@@ -149,15 +152,56 @@ Notes:
 
 * Language Model : LLM ou ChatModel
 <br><br>
-* Les retrievers : récupèrent de données pour enrichir et augmenter la précision des requêtes
-<br><br>
 * les bases vectorielles : un stockage de données non structurées et vectorisées
+<br><br>
+* Les retrievers : récupèrent de données pour enrichir et augmenter la précision des requêtes
 <br><br>
 * Les agents : un modèle choisissant la séquence d'actions à prendre vs chaîne dont la séquence est figée
 
 Notes:
 - LLM = input simple / ChatModel = input séquence de messages structurés
 - Concept sortant NLP - Natural Language Programming
+
+##==##
+
+<!-- .slide:-->
+
+# LangChain
+
+## Données externes
+
+<div style="display: flex;flex-direction: row;width: 100%">
+<div style="flex: 1">
+
+<br><br>
+
+* Récupération depuis diverses sources
+
+<br><br>
+
+* Retour sous la forme d'un ou plusieurs <a href="https://js.langchain.com/v0.2/docs/concepts/#document">documents</a>
+
+<br><br>
+
+* Problématiques de traitement des données
+</div>
+<img class="h-800" src="./assets/images/document_loading.png">
+</div>
+
+Notes:
+- document : interface de langchain pour la représentation de données textuelles
+    - pageContent : contenu de la page
+    - metadata : informations additionnelles (source, date, données custom, ...)
+
+##==##
+
+<!-- .slide: class="exercice"-->
+
+# 03 - LangChain
+
+## Lab
+
+* Données externes
 
 ##==##
 
@@ -177,8 +221,8 @@ Notes:
 
 Notes:
 
-- Les embeddings permettent de représenter le texte de manière compréhensible pour les machines
-- Cette représentation est cruciale pour la recherche et la comparaison de textes
+- permet de représenter le texte de manière compréhensible pour les machines
+- représentation cruciale pour la recherche et la comparaison de textes
 
 ##==##
 
@@ -193,41 +237,11 @@ Notes:
 style="width: 100%; height: 100%;"></iframe>
 </div>
 
-##==##
-
-<!-- .slide:-->
-
-# LangChain
-
-## Données externes
-
-<div style="display: flex;flex-direction: row;width: 100%">
-<div style="flex: 1">
-
-<br><br>
-
-* Récupération depuis diverses sources
-
-<br><br>
-
-* Retour sous la forme d'un ou plusieurs documents
-
-<br><br>
-
-* Problématiques de traitement des données
-</div>
-<img class="h-800" src="./assets/images/document_loading.png">
-</div>
-
-##==##
-
-<!-- .slide: class="exercice"-->
-
-# 03 - LangChain
-
-## Lab
-
-* Données externes
+Notes:
+- k-Nearest Neighbors (k-Plus Proches Voisins)
+- permet de récupérer les documents ayant des vecteurs similaires
+    - ayant une similarité dans le contenu
+    - ne pas prendre en compte ce qui diffère trop
 
 ##==##
 
@@ -255,7 +269,11 @@ style="width: 100%; height: 100%;"></iframe>
 
 Notes:
 exception bêta ChatMessageHistory
-car essentiellement encore codé sur le moèdle Chain et non LCEL
+car essentiellement encore codé sur le moèdle Chain et non LCEL (donc non chainable pour le moment)
+
+- "classiques" : pgvector (PostGres), Pinecone
+- FAISS : moteur vectoriel de Meta
+- BDD graph ayant une compatibilité vectorielle : Neo4J
 
 ##==##
 
@@ -267,9 +285,8 @@ car essentiellement encore codé sur le moèdle Chain et non LCEL
 
 <div>
 
-* Coeur principal des RAG (Retrieval Augmented Generation)
-
-* Interprétation des données
+- Coeur principal des RAG (Retrieval Augmented Generation)
+- Interprétation des données
 
 </div>
 <div style="display: flex;flex-direction: column;align-items: center">

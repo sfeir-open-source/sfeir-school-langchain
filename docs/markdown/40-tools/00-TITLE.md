@@ -105,38 +105,3 @@ Déploiement sur Cloud Run, AWS Copilot, Azure en mode serverless directement
 # 07 - 🦜️🏓 LangServe
 
 ## Lab
-
-##==##
-
-<!-- .slide:-->
-
-# 🦜🕸️ LangGraph
-
-* Une librairie de l'écosystème LangChain
-<br><br>
-
-* Pilote multi-agent comme une machine à état
-<br><br>
-
-* Mise en place d'interconnexions entre des agents (WorkFlow, Node)
-<br><br>
-
-* Workflow de cycles
-
-<!-- ## ==## -->
-
-<!-- <!-- .slide: class="cadre no-filter langgraph-steps" data-type-show="prez" data-state="langgraph-steps"-->
-<!-- # LangGraph -->
-
-<!-- <svg class="h-850">
-    <use href="#langgraph-multi-agent" link:href="#langgraph-multi-agent" />
-</svg> -->
-<!-- <div class="fragment" data-fragment-index="1" hidden></div>
-<div class="fragment" data-fragment-index="2" hidden></div>
-<div class="fragment" data-fragment-index="3" hidden></div>
-<div class="fragment" data-fragment-index="4" hidden></div>
-<div class="fragment" data-fragment-index="5" hidden></div>
-<div class="fragment" data-fragment-index="6" hidden></div>
-<div class="fragment" data-fragment-index="7" hidden></div>
-<div class="fragment" data-fragment-index="8" hidden></div>
-<div class="fragment" data-fragment-index="9" hidden></div> -->
