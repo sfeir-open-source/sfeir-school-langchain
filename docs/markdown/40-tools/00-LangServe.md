@@ -105,3 +105,5 @@ Déploiement sur Cloud Run, AWS Copilot, Azure en mode serverless directement
 # 07 - 🦜️🏓 LangServe
 
 ## Lab
+
+- Exposition d'une chaîne en API

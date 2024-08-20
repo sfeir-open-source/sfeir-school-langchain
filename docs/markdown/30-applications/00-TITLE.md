@@ -61,16 +61,6 @@ https://medium.com/neo4j/json-based-agents-with-ollama-langchain-9cf9ab3c84ef
 
 ##==##
 
-<!-- .slide:  class="exercice"-->
-
-# 06 - LangChain
-
-## Lab
-
-* Création d'un agent et d'outils
-
-##==##
-
 <!-- .slide: class="transition"-->
 
 # Démo
