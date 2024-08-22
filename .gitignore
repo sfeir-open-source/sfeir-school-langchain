@@ -70,6 +70,3 @@ typings/
 docs/test.html
 
 .venv*
-
-
-credentials.json
