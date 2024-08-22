@@ -57,4 +57,5 @@ Notes:
 
 ## Lab
 
+* ChatModel
 * Données externes

@@ -27,8 +27,9 @@
 * Les chaînes : séquence d'appels avec un LLM, un outils ou un traitement de données => LCEL
 
 Notes:
-* LCEL = LangChain Expression Language
-* Interface définissant ```invoke, batch, stream, ainvoke, ..```
+- LCEL = LangChain Expression Language
+- Interface définissant ```invoke, batch, stream, ainvoke, ..```
+- chaines : l'output d'un élément est l'input du suivant
 
 ##==##
 
