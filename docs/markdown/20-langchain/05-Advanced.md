@@ -63,6 +63,7 @@
 
 Notes:
 - un agent utilise un LLM en moteur de résonnement pour déterminer quelle action effectuer et avec quels inputs
+- peut utiliser des outils pour interragir avec son environnement ou effectuer des tâches
 
 ##==##
 
