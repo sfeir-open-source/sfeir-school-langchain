@@ -2,21 +2,19 @@
 
 # Présentation
 
-![speaker](./assets/images/bma.jpg)
-![badge first-badge](./assets/images/aws_architect_associate.png)
-![badge second-badge](./assets/images/aws_developper_associate.png)
+![speaker](./assets/images/cba.png)
 ![company](./assets/images/logo-sfeir-blanc.png)
 
-## Benoît MAIRE
+## Clément BARBAZANGE
 
-### SE Cloud Nantes
+### Dev Back Bordeaux
 
 <!-- .element: class="icon-rule icon-first" -->
 
-### @benoit_maire
+### @clement-barbazange
 
 <!-- .element: class="icon-linkedin icon-second" -->
 
-### maire.b@sfeir.com
+### barbazange.c@sfeir.com
 
 <!-- .element: class="icon-mail icon-third" -->
