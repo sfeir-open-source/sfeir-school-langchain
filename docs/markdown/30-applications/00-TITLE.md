@@ -26,11 +26,6 @@
 
 # ChatBot
 
-Notes:
-- Support utilisateurs
-- Assistant personnel
-- Résumé de documents
-
 [Image Credit : Copilot - 02/2024](https://copilot.microsoft.com/)
 <!-- .element: class="credits" -->
 
@@ -39,11 +34,6 @@ Notes:
 <!-- .slide: data-background="./assets/images/search_intern.jpg" class="transition mask quote-slide" -->
 
 # Moteur de recherche interne
-
-Notes:
-- Exploitation de documents
-- Base de connaissances
-- Support technique
 
 [Image Credit : Copilot - 02/2024](https://copilot.microsoft.com/)
 <!-- .element: class="credits" -->
@@ -58,6 +48,16 @@ Notes:
 
 Notes:
 https://medium.com/neo4j/json-based-agents-with-ollama-langchain-9cf9ab3c84ef
+
+##==##
+
+<!-- .slide:  class="exercice"-->
+
+# 06 - LangChain - Application
+
+## Lab
+
+* Créer un assistant d'interrogation wikipedia
 
 ##==##
 
