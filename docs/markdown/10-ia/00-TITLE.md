@@ -10,6 +10,12 @@
 
 Notes:
 L'intelligence artificielle = le robot ayant la maitrise du monde
+- Sujet très vaste
+- De plus en plus médiatisé
+- Mis en avant dans plusieurs contextes de tous les jours et principalement dans :
+  - features sur les appareils connectés
+  - navigateurs web
+  - features dans les outils de travail (Miro, Trello, ...)
 
 ##==##
 
@@ -33,25 +39,26 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="two-column" -->
+## Vue d'ensemble de l'IA générative
 
-## Machine Learning
-
-![w-600 mt-100](./assets/images/ml.jpg)
-
-Notes:
-
-##--##
-
-<!-- .slide: class="flex-row" -->
-
-## Intelligence Artificielle Générative
-
-![w-250 mt-50](./assets/images/chatgpt.png)
-![w-300 mt-450](./assets/images/gemini.png)
-![w-300](./assets/images/mistral-ai.png)
+<div class="flex-row">
+    <img class="h-850" src="./assets/images/ml_dl_genai.png">
+</div>
 
 Notes:
+- IA :
+  - Le fait d'apprendre à une machine à réaliser une tâche
+- ML :
+  - Nécessite des données structurées l'apprentissage
+  - Utilisé pour des tâches simples (classification, regression, clustering, ...)
+- DL :
+   - Peut utiliser des donées non structurées
+   - Excelle dans la reconnaissance de paternes complexes (reconnaissance d'images, analyse de sentiment, etc.)
+   - Utilise des architectures de réseaux de neurones
+- Gen AI :
+  - Branche de l'IA capable de créer du contenu original (text, image, audio, ...)
+  - Basée sur du DL avancé
+  - Utilise des architectures comme les GANs ou Transformers (type d'architecture de réseau de neurones)
 
 ##==##
 
@@ -61,22 +68,21 @@ Notes:
 
 <br><br>
 
-- Effectuer une tâche quelque soit ses données d'entraînement
+- Capacité à créer du contenu original basé sur ses données d'entraînement
 
 <br><br>
-
-- Une réponse par création de contenu
-
-<br><br>
-
 - Implique une forte critique de la réponse formulée
+
+<br><br>
+
+- Applications : création artistique, rédaction assistée, développement, etc.
 
 ##==##
 
 <!-- .slide:  class="exercice"-->
 
-# 01 - IA Gen
+# LLM en local
 
-## Lab
+## Démo
 
-* Ma première IA Locale
+* Ollama

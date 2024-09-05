@@ -6,7 +6,7 @@ function schoolSlides() {
   return [
     //
     `${directory}00-TITLE.md`, //
-    `${directory}speaker-bma.md`, //
+    `${directory}speaker-cba.md`, //
     `${directory}01-intro.md`, //
   ]
 }
@@ -25,6 +25,11 @@ function langchainSlides() {
   return [
     //
     `${directory}00-TITLE.md`, //
+    `${directory}01-Presentation.md`, //
+    `${directory}02-Basics.md`, //
+    `${directory}03-DataLoading.md`, //
+    `${directory}04-StoringData.md`, //
+    `${directory}05-Advanced.md`, //
   ]
 }
 
@@ -41,9 +46,9 @@ function toolsSlides() {
   const directory = '40-tools/';
   return [
     //
-    `${directory}00-TITLE.md`, //
-    `${directory}01-TITLE.md`, //
-    `${directory}02-TITLE.md`, //
+    `${directory}00-LangServe.md`, //
+    `${directory}01-LangGraph.md`, //
+    `${directory}02-LangSmith.md`, //
   ]
 }
 
