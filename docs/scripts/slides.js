@@ -7,6 +7,7 @@ function schoolSlides() {
     //
     `${directory}00-TITLE.md`, //
     `${directory}speaker-cba.md`, //
+    `${directory}speaker-bma.md`, //
     `${directory}01-intro.md`, //
   ]
 }
