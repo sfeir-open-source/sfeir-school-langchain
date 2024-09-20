@@ -1,5 +1,7 @@
 # Speaker Notes
 
+L'ensemble des éléments est disponible dans l'espace Drive de la School
+
 ## Pré-requis
 
 - Python 3 (construit sur 3.11)
