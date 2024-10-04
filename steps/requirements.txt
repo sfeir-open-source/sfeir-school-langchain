@@ -1,8 +1,9 @@
 duckduckgo_search==6.2.12
-google-auth==2.34.0
+google-auth~=2.34.0
 google-crc32c==1.6.0
-langchain==0.2.16
-langchain-community==0.2.16
-langchain-google-vertexai==1.0.10
-langgraph==0.2.19
-langsmith==0.1.117
+python-dotenv~=1.0.0
+langchain~=0.2.0
+langchain-community~=0.2.0
+langchain-google-vertexai~=1.0.10
+langgraph~=0.2.0
+langsmith~=0.1.0
