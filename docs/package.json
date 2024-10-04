@@ -1,7 +1,7 @@
 {
-  "name": "sfeirschoolxxx",
-  "version": "0.9.0",
-  "description": "Sfeir School XXX with revealJS",
+  "name": "sfeirschoollangchain",
+  "version": "0.10.0",
+  "description": "Sfeir School LangChain with revealJS",
   "scripts": {
     "sass": "sass ./scss/slides.scss:./css/slides.css --source-map --watch",
     "sass-once": "sass ./scss/slides.scss:./css/slides.css --source-map",
@@ -15,7 +15,11 @@
     "url": "git+https://github.com/sfeir-open-source/sfeir-school-template.git"
   },
   "keywords": [
-    "xxx",
+    "school",
+    "langchain",
+    "langgraph",
+    "langserve",
+    "langsmith",
     "sfeir"
   ],
   "author": "jefbinomed",
