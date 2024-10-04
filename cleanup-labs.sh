@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
-find steps/**/solution.ipynb -type f -exec jupyter nbconvert --clear-output --inplace {} \;
+find steps -name solution.ipynb -type f -exec jupyter nbconvert --clear-output --inplace {} \;
+find steps -name demo.ipynb -type f -exec jupyter nbconvert --clear-output --inplace {} \;
