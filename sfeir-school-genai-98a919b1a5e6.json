@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sfeir-school-genai",
+  "private_key_id": "98a919b1a5e671eceb6906d354fd7aab3fb707d6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDIOoAjKrEosLV7\ntcVVoPlMm5aUN93xky9xym6iwCRIo4KLJSS1qDLMN9W5LT6R+0c1Nn9rgwn8Yy6D\nkybyPvqgWmWhU3sdI4nTz9PY0at4YglJldM1/7/uoEzMod6ibkOnEhZ3+1RkfU2Y\nXte65c8KEwUO/8c4wif2tdPoN5nOUUILaQU5UD8grV7tqpzXc1c1fGBK0dx11NPP\nxsBbQc8C8zstQdB2Sv/t/yJkdDvfvry308Xk9s0TCwYJhPKgWgxAR07utXFAXdLW\nJTMiJbamJSArUT13WQz5mHzustsY2wYn4caU/fzVBQjFJwb9ZLQyaBrlqrzfXV9P\n/fbtPFNNAgMBAAECggEAEP/GeTXarJW0Eriv9EEiaTqcYiEMGsJgOMzy76ZYbkJT\nhvS0VSfeiDAFWR9aPJKUzRO/ZaVOZ7sT69/GYrKuHIcQMc4gmay2uuDeH35NjH7m\nQvURZXg9F0lMu+LSQAAUhk6m0bDozU9GEzWaIyf3l+ddepSEmXECa5OsVf7CdB2T\ne7jo3OUxy6AgkKoci6m21uVKMqsBhD1KdeW5JzC6bS2QYEkP9GdFkLrC6/brnOQi\nF7X6V1+inIBfhqjwuKxKMmVLkzTT3rOSxv6NJ5lNLJyinnfgwmEsDVpZ1hxUWIIT\ny0EBLYhxdw/aQyua9FLx6yfphOHiE4qxkLCpSQh6EQKBgQDuL2A3chbt7TfmjKmx\nouLbLpUumHx16kd4mmHUzqq5K7Ml3Ib50hvQSraQGHpSCpWB+a9KFUBApcHYfX+L\nrJfKqYhh63uRlX9G/Y9Mg9OfUNns9BXIfTj+XJhXcjdGRdMiL52pxKOF3iT5Erq2\nbvP4g5sYBkuCkBCVOvaEnhpv6wKBgQDXNFsK+wdRiAdnx2QPkEvoB9E+NppoPHhA\nYERjgFthwwGfQq01Wsmwd0hnSjwv9e6RP7Qf6cF/5+dEaZWIvcnaljeQyQ0CqCJj\nm2xNB6moow89AtmVQ6cH3yT95XhW8sIgFvbLuCtlgNhFTDHgS4veL4t2Oq73EcuK\nzPeHNjSzpwKBgCKGw4/F/gTnSh8lbMPPNMtI6V8jw4bkOxAEcQIEI0NMTl/Co946\n0sVSzzv8EF8sIZgBtaMriXDVlk/ngUGh9y7tfFOVawgjf5uuzcLtqRODCNQMXcv+\nOvDEQ2EJsXGCVaSy+kvNsVaKaRmh2WbwlnUDvsuwveljMMQxE+MNeA+ZAoGAd2zd\njUVrdUpo2aWkGKL6DMSx0LWakHfmP8tsiE9F5wXB07C70F0WijBX5MIkjnULNF3G\nxuMA98so4yU4z46LAxvTsCxyZOQLWX1553F2LFh472Gyf4vwmISz0ZZTZuUG56n2\nwWzt4EFVQ3eaQh+Kef2mhjDgwcmFS/yc7NMfAgcCgYEAlAvDY4Io9FzBUSqltuqm\ncugAmPqImg/qr1x3kcjNcpOktrwkBp9MA20D3M8mmiT8qu3tmeZREG8U+IjM/9DL\nOi3lBWWQRe1FupbstWX4NtaB0t0t3d0uG9eWitTO5+KG/8Hz4gnj4OEql4Er4T81\naaQlJOTkKLBQnZ4WyXmbiAw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sfeir-school-genai-user@sfeir-school-genai.iam.gserviceaccount.com",
+  "client_id": "103854472241426669172",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sfeir-school-genai-user%40sfeir-school-genai.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
